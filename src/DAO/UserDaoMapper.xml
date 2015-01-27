@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="DAO.UserDao">
+    <select id="queryUser" parameterType="String" resultType="model.User">
+        select * from users where employeeId=#{employeeId}
+    </select>
+    
+     <update id="updateUser" parameterType="model.User">  
+        update users 
+        <set>
+        	<if test="name!=null">
+        		name=#{name},
+        	</if>
+        	<if test="bankAccount!=null">
+        		bankAccount=#{bankAccount},
+        	</if>
+        	<if test="bankName!=null">
+        		bankName=#{bankName},
+        	</if>
+        	<if test="contact">
+        		contact=#{contact},
+        	</if>
+        	<if test="email">
+        		email=#{email},
+        	</if>
+        	<if test="costCenter">
+        		costCenter=#{costCenter},
+        	</if>
+        	<if test="password">
+        		password=#{password},
+        	</if>
+       	</set>  
+       	where employeeId=#{employeeId} 
+    </update> 
+   
+</mapper>

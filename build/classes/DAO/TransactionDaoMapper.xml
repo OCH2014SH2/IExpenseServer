@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="DAO.TransactionDao">
+    <insert id="addTranscation" parameterType="model.Transaction" useGeneratedKeys="true" keyProperty="id">  
+         insert into transactions (applicant, date, totalAmount, type, expireDate, status, justification, approver) values (#{applicant}, #{date}, #{totalAmount}, #{type}, #{expireDate}, #{status}, #{justification}, #{approver})
+    </insert>
+      
+    <select id="queryTransactionDetail" parameterType="int" resultType="model.Transaction">
+         select * from transactions where id=#{id}
+    </select>
+    
+    <select id="queryTransactionList" parameterType="model.QueryConfig" resultType="model.Transaction">
+         select * from transactions where applicant=#{userId} 
+         <if test="status > -1">
+         	and status=#{status}
+         </if>
+    </select>
+    
+    <update id="processTransaction" parameterType="java.util.Map">  
+         update transactions set status=#{status} where id=#{id}
+    </update>  
+    
+    <select id="getLatestTransactionId" resultType="int">
+    	select * from transactions order by id DESC limit 1
+    </select>
+    
+    <select id="queryWaitApprovedTransactionList" parameterType="java.util.Map" resultType="model.Transaction">
+         select * from transactions where approver=#{userId} and status=0
+    </select>
+</mapper>

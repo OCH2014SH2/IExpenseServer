@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="DAO.ReceiptDao">
+    <select id="getReceipt" parameterType="int" resultType="model.Receipt">
+         select * from receipt where transactionId=#{transactionId}
+    </select>
+    
+    <insert id="addReceipt" parameterType="model.Receipt" useGeneratedKeys="true" keyProperty="id">  
+         insert into receipt (transactionId, amount, date, title, imgUrl) values (#{transactionId}, #{amount}, #{date}, #{title}, #{imgUrl})
+    </insert>
+    
+     <delete id="deleteReceipt" parameterType="int">  
+      	delete from receipt where id = #{id}
+    </delete>  
+    
+    <update id="updateReceipt" parameterType="model.Receipt">  
+        update receipt 
+        <set>
+        	<if test="imgUrl!=null">
+        		imgUrl=#{imgUrl},
+        	</if>
+       	</set>
+       	where transactionId=#{transactionId} 
+    </update>
+</mapper>
