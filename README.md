@@ -1,3 +1,4 @@
+#iExpenseServer
 1. 前置条件：装好jdk配好环境，装好mysql(http://dev.mysql.com/downloads/mysql/)，
    装好eclipse，下载好tomcat（http://tomcat.apache.org/download-70.cgi）
 2. 将/dependency/jaxws dependency目录下的10个jar拷贝到 tomcat安装路径/lib/ 目录下
