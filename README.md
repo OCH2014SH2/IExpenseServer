@@ -1,12 +1,13 @@
-1. Ç°ÖÃÌõ¼ş£º×°ºÃjdkÅäºÃ»·¾³£¬×°ºÃmysql(http://dev.mysql.com/downloads/mysql/)£¬×°ºÃeclipse£¬ÏÂÔØºÃtomcat£¨http://tomcat.apache.org/download-70.cgi£©
-2. ½«/dependency/jaxws dependencyÄ¿Â¼ÏÂµÄ10¸öjar¿½±´µ½ tomcat°²×°Â·¾¶/lib/ Ä¿Â¼ÏÂ
-3. ´ò¿ªeclipse£¬½«Hackathon£¨ÏîÄ¿ÎÄ¼ş¼Ğ£©µ¼Èë
-4. ÔÚeclipseÀïÅäÖÃºÃserver£¨ÅäÖÃ¾ßÌå¹ı³ÌÂÔ£¬²»»á¿É×ÔĞĞËÑË÷Ò»ÏÂ£©
-5. ĞŞ¸ÄÏîÄ¿µÄdb.propertiesÎÄ¼ş£¬°üÀ¨url, username, root£¬£¨ÕâĞ©ÊÇ¹ØÓÚÄã±¾µØmysqlµÄÅäÖÃ£©
-6. ÔÙÏòÄãµÄmysqlµ¼Èë£¬ÒÑ¾­½¨ºÃµÄÊı¾İ¿â£¨/dependency/iExpense.sql£©£¬»òÕßÄãÒ²¿ÉÒÔ×Ô¼º½¨£¨µ±È»±í½á¹¹µÃºÍÎÒÃÇÖ®Ç°µÄÒ»Ñù£¬²»È»±¨´í£©
-7. ÔËĞĞÄãµÄserver£¬ÔÚä¯ÀÀÆ÷ÇÃÈëhttp://localhost:8080/Hackathon/hackService?wsdl£¬Èç¹ûÄÜÕı³£´ò¿ª£¬¾Í±íÊ¾webserviceÕıÈ·µØ²¿Êğµ½·şÎñÆ÷ÉÏ²¢ÇÒÔËĞĞÁË¡£
-8. È»ºóÈç¹ûÄãÏëÔÚ²»Í¬»úÆ÷ÉÏµ÷ÓÃÕâ¸öwebservice£¬ÄãĞèÒª½«°²×¿¶ËÅäÖÃµÄµØÖ·¸ÄÎª ÄãµÄ¾ÖÓòÍøIPµØÖ·:8080/Hackathon/hackService?wsdl£¬
-   Èç¹ûÖ»ÏëÔÚ±¾»úÉÏµ÷ÓÃ£¬¾Í½«ÅäÖÃµÄµØÖ·Ğ´Îªhttp://localhost:8080/Hackathon/hackService?wsdl¼´¿É¡£
+1. å‰ç½®æ¡ä»¶ï¼šè£…å¥½jdké…å¥½ç¯å¢ƒï¼Œè£…å¥½mysql(http://dev.mysql.com/downloads/mysql/)ï¼Œ
+   è£…å¥½eclipseï¼Œä¸‹è½½å¥½tomcatï¼ˆhttp://tomcat.apache.org/download-70.cgiï¼‰
+2. å°†/dependency/jaxws dependencyç›®å½•ä¸‹çš„10ä¸ªjaræ‹·è´åˆ° tomcatå®‰è£…è·¯å¾„/lib/ ç›®å½•ä¸‹
+3. æ‰“å¼€eclipseï¼Œå°†Hackathonï¼ˆé¡¹ç›®æ–‡ä»¶å¤¹ï¼‰å¯¼å…¥
+4. åœ¨eclipseé‡Œé…ç½®å¥½serverï¼ˆé…ç½®å…·ä½“è¿‡ç¨‹ç•¥ï¼Œä¸ä¼šå¯è‡ªè¡Œæœç´¢ä¸€ä¸‹ï¼‰
+5. ä¿®æ”¹é¡¹ç›®çš„db.propertiesæ–‡ä»¶ï¼ŒåŒ…æ‹¬url, username, rootï¼Œï¼ˆè¿™äº›æ˜¯å…³äºä½ æœ¬åœ°mysqlçš„é…ç½®ï¼‰
+6. å†å‘ä½ çš„mysqlå¯¼å…¥ï¼Œå·²ç»å»ºå¥½çš„æ•°æ®åº“ï¼ˆ/dependency/iExpense.sqlï¼‰ï¼Œæˆ–è€…ä½ ä¹Ÿå¯ä»¥è‡ªå·±å»ºï¼ˆå½“ç„¶è¡¨ç»“æ„å¾—å’Œæˆ‘ä»¬ä¹‹å‰çš„ä¸€æ ·ï¼Œä¸ç„¶æŠ¥é”™ï¼‰
+7. è¿è¡Œä½ çš„serverï¼Œåœ¨æµè§ˆå™¨æ•²å…¥http://localhost:8080/Hackathon/hackService?wsdlï¼Œå¦‚æœèƒ½æ­£å¸¸æ‰“å¼€ï¼Œå°±è¡¨ç¤ºwebserviceæ­£ç¡®åœ°éƒ¨ç½²åˆ°æœåŠ¡å™¨ä¸Šå¹¶ä¸”è¿è¡Œäº†ã€‚
+8. ç„¶åå¦‚æœä½ æƒ³åœ¨ä¸åŒæœºå™¨ä¸Šè°ƒç”¨è¿™ä¸ªwebserviceï¼Œä½ éœ€è¦å°†å®‰å“ç«¯é…ç½®çš„åœ°å€æ”¹ä¸º ä½ çš„å±€åŸŸç½‘IPåœ°å€:8080/Hackathon/hackService?wsdlï¼Œ
+   å¦‚æœåªæƒ³åœ¨æœ¬æœºä¸Šè°ƒç”¨ï¼Œå°±å°†é…ç½®çš„åœ°å€å†™ä¸ºhttp://localhost:8080/Hackathon/hackService?wsdlå³å¯ã€‚
 
-°²×°mysql http://jingyan.baidu.com/article/597035521d5de28fc00740e6.html
-ÈçºÎµ¼Èëµ¼³ömysqlÊı¾İ¿â: http://www.cnblogs.com/xiaoluo501395377/archive/2012/12/04/2801127.html
+å®‰è£…mysql http://jingyan.baidu.com/article/597035521d5de28fc00740e6.html
+å¦‚ä½•å¯¼å…¥å¯¼å‡ºmysqlæ•°æ®åº“: http://www.cnblogs.com/xiaoluo501395377/archive/2012/12/04/2801127.html
